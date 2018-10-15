@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'DR';
+const prefix = 'dr';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -280,7 +280,7 @@ client.on('message', function(message) {
 
 client.on('message', async message => {
  if(message.author.id !== '448607625077194762') return;
-             if (message.content.startsWith("DR")) {
+             if (message.content.startsWith("dr")) {
 let args = message.content.split(' ').slice(1).join(' ');
             let sigMessage = await args;
             
